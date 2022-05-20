@@ -194,7 +194,7 @@ body {
   max-width: 270px;
 }
 .main-work {
-  margin-bottom: 0px;
+  padding-top: 0px;
 }
 .main-item {
   font-size: 14px;
@@ -248,6 +248,7 @@ body {
   letter-spacing: 0.03em;
 }
 .work-position {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -256,6 +257,9 @@ body {
 
   color: var(--secondary-text-color);
 }
+.team-flex {
+  background-color: #fff;
+}
 .work-flex + .work-flex {
   margin-left: 30px;
 }
@@ -263,7 +267,10 @@ body {
 .footer-contacts {
   background-color: var(--secondary-bgc-page);
 }
-.footer-address-map {
+.mail {
+  margin-bottom: 9px;
+}
+.list .map {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -271,62 +278,64 @@ body {
   font-style: normal;
   display: block;
   margin-top: 20px;
+  margin-bottom: 9px;
 }
 .footer-address {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
-  margin-top: 9px;
 }
 .footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 /*-----PORTFOLIO-----*/
 /*---NAV---*/
-
 /*---BUTTONS---*/
 .filter-button {
-  font-weight: 500;
-  font-size: 16px;
+  padding: 6px 22px 6px 22px;
+  margin-right: 8px;
+  font-size: var(--secondary-font-size);
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background: var(--secondary-bgc-main);
+  color: black;
+  background-color: var(--secondary-bgc-main);
   border-radius: 4px;
+  cursor: pointer;
   border: transparent;
-  margin-left: 8px;
-  margin-bottom: 35px;
 }
 .filter-button:focus,
 .filter-button:hover {
   background-color: var(--accent-color);
   color: var(--primary-bgc-page);
 }
+.filter-list .link {
+  margin: 0;
+  display: block;
+}
 .current-btn {
-  color: var(--primary-bgc-page);
-  background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
+  padding: 6px 22px 6px 22px;
+  margin-right: 8px;
+  font-size: var(--secondary-font-size);
   line-height: 1.62;
-  letter-spacing: 0.02em;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  color: var(--accent-color-white);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+  border: transparent;
 }
 
 /*---MAIN---*/
 
-.flex-item-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
 .flex-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .portfolio-item {
   width: 370px;
